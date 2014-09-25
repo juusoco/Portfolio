@@ -164,7 +164,9 @@ module.exports = function (grunt) {
     wiredep: {
       app: {
         ignorePath: /^\/|\.\.\//,
-        src: ['<%= config.app %>/index.html'],
+        src: ['<%= config.app %>/index.html',
+              '<%= config.app %>/*.html'
+        ],
         exclude: ['bower_components/bootstrap/dist/js/bootstrap.js']
       }
     },
