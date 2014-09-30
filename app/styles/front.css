@@ -1,0 +1,16 @@
+.img-profile {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.juuso {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.jumbotron {
+  color: #fff;
+  background: url('../images/bg_header_blurred.jpg');
+  background-attachment: fixed;
+}
