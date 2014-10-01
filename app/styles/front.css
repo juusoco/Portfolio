@@ -1,16 +1,79 @@
+body {
+  font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
+  line-height: 1.42857;
+  color: #333;
+  background-color: #FFF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+.navbar-default {
+  background-color: transparent;
+}
+
+h2.section_title {
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin: 0 0 2em 0;
+}
+
+/* Jumbotron */
+
 .img-profile {
-  margin: 0 auto;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin: 40px auto;
 }
 
 .juuso {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  font-family: 'Pacifico', cursive;
+  margin: 0px 0.3em 0.6em 0px;
+  letter-spacing: -1px;
 }
 
 .jumbotron {
   color: #fff;
   background: url('../images/bg_header_blurred.jpg');
   background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 0;
+}
+
+.jumbotron p {
+  margin-bottom: 15px;
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.arrow_button {
+  margin: 1.5em 0 0 0;
+}
+
+.glyphicon-chevron-down {
+  font-size: 2em;
+  color: #fff;
+}
+
+.glyphicon-chevron-down:hover {
+  color: #000;
+}
+
+/* About */
+
+.about {
+  background: #e0372f;
+  margin-bottom: 0;
+  color: rgba(255, 245, 245, 0.9);
+}
+
+.about p {
+  text-align: center;
 }
