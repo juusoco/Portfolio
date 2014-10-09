@@ -24,9 +24,9 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
+
     <!-- Navigation -->
-      <header class="navbar-default navbar-fixed-top" role="banner">
+    <header class="navbar-default navbar-fixed-top" role="banner">
         <div class="container">
           <nav role="navigation">
             <div class="container-fluid">
@@ -61,12 +61,21 @@
             </div><!-- /.container-fluid -->
           </nav>
         </div>
-      </header>
-      <!-- /Navigation -->
+    </header>
+    <!-- /Navigation -->
+    <!-- Blur Images -->
+    <div class="blurImg">
+      <div style="background-image: url('images/bg_header_blurred.jpg')">
+      </div>
+      <div class="blur" style="background-image: url('images/bg_header_blurred_more.jpg')">
+      </div>
+    </div>
+    <!-- /Blur Images -->
+    <!-- Jumbotron -->
+    <div class="jumbotron">
 
-      <!-- Jumbotron -->
-      <div class="jumbotron">
-          <img class="img-responsive img-profile" src="images/profile.png">
+      <div>
+        <img class="img-responsive img-profile" src="images/profile.png">
           <p class="lead">Hello, I'm</p>
           <h1 class="juuso">Juuso</h1>
           <p class="lead">I design, code, shoot, mix & edit stuff.</p>
@@ -75,27 +84,92 @@
             <a href="#"><span class="glyphicon glyphicon-chevron-down"></span></a>
           </div>
       </div>
-      <!-- /Jumbotron -->
-
-      <!-- About -->
-      <div class="about">
-        <div class="container">
-          <div class="row marketing">
-            <div class="col-lg-12">
+    </div>
+    <!-- /Jumbotron -->
+    <!-- About -->
+    <div class="about">
+      <div class="container">
+         <div class="col-lg-12">
               <h2 class="section_title">About</h2>
               <p>Hi, my name is Juuso and I'm an entrepreneuer. I design, code, shoot, mix & edit stuff. In other words I design user interfaces, graphics & websites. I also do digital marketing, photography and audio/video production. I do stuff...a lot, and don't always know how to describe my know-how. Please see my work below to learn more.</p>
-              <h4>Bootstrap</h4>
-              <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-            </div>
+
+              <hr class="half-rule"></hr>
+
+              <h2 class="section_title">Skills</h2>
+
+              <p>Ideas</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-skill" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 98%;">
+                </div>
+              </div>
+              <p>UI/UX Design</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-skill" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 98%;">
+                </div>
+              </div>
+              <p>Front End Development</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-skill" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
+                </div>
+              </div>
+              <p>Photography</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-skill" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                </div>
+              </div>
+              <p>Video Production</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-skill" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                </div>
+              </div>
+              <p>Digital Marketing & Social Media</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-skill" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-transparent btn-lg">View my work</button>
+
           </div>
       </div>
-      <!-- /About -->
+    </div>
+    <!-- /About -->
+    <!-- Testimonials -->
+    <div class="testimonials">
+      <div class="container">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          </ol>
 
-        <div class="footer">
-          <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="carousel-caption">
+              <h3>“ Juuso is definitely an interesting case. Rarely you get to work with a guy who is so full of ideas, a great team player and always so self improving. ”</h3>
+              <h4>– Ekku Ristilä</h4>
+              </div>
+            </div>
+            <div class="item">
+             <div class="carousel-caption">
+              <h3>“ Creative and hardworking person, who has both lots of new ideas and the motivation to execute them. ”</h3>
+              <h4>– Johannes Tuominen</h4>
+              </div>
+            </div>
+          </div>
         </div>
-
       </div>
+    </div>
+    <!-- /Testimonials -->
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+          <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+      </div>
+    </div>
+    <!-- /Footer -->
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -130,6 +204,7 @@
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
+        <script src="scripts/index.js"></script>
         <!-- endbuild -->
 </body>
 </html>

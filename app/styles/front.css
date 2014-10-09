@@ -1,5 +1,7 @@
+/***** Fonts *****/
+
 body {
-  font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
+   font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
   line-height: 1.42857;
   color: #333;
   background-color: #FFF;
@@ -7,42 +9,32 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-p {
-  font-size: 1.1em;
+.container {
+  max-width: 800px;
 }
 
-.navbar-default {
-  background-color: transparent;
+.container-wide {
+  max-width: 1100px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-h2.section_title {
+h2 {
   font-size: 1em;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   text-align: center;
+}
+
+h2.section_title {
   margin: 0 0 2em 0;
 }
 
-/* Jumbotron */
-
-.img-profile {
-  margin: 40px auto;
-}
-
-.juuso {
-  font-family: 'Pacifico', cursive;
-  margin: 0px 0.3em 0.6em 0px;
-  letter-spacing: -1px;
-}
-
-.jumbotron {
-  color: #fff;
-  background: url('../images/bg_header_blurred.jpg');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
-  margin-bottom: 0;
+p {
+  font-size: 1.1em;
 }
 
 .jumbotron p {
@@ -51,29 +43,198 @@ h2.section_title {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-shadow: 0.06em 0.06em 0 rgba(0, 0, 0, 0.3);
 }
+
+.jumbotron h1 {
+  text-shadow: 0.04em 0.04em 0 rgba(0, 0, 0, 0.3);
+}
+
+/***** Buttons *****/
 
 .arrow_button {
   margin: 1.5em 0 0 0;
 }
 
 .glyphicon-chevron-down {
-  font-size: 2em;
+  font-size: 2.5em;
   color: #fff;
+  transition: all 0.4s ease;
 }
 
 .glyphicon-chevron-down:hover {
-  color: #000;
+  color: rgba(0, 0, 0, 1);
 }
 
-/* About */
+.btn {
+  margin: 2em 0 2em;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+    padding: 20px 26px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+}
+
+.btn-transparent {
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: rgba(255, 245, 245, 0.9);
+    background-color: transparent;
+    border-color: rgba(255, 245, 245, 0.6);
+}
+
+.btn-transparent:hover {
+    color: #e0372f;
+    background-color: rgba(255, 245, 245, 0.6);
+    transition: all 0.4s ease;
+}
+
+/***** Jumbotron *****/
+    
+    /***** Profile image *****/
+      .img-profile {
+        margin: 40px auto;
+      }
+
+      .juuso {
+        font-family: 'Pacifico', cursive;
+        margin: 0px 0.3em 0.6em 0px;
+        letter-spacing: -1px;
+      }
+
+.blurImg {
+  position:relative;
+  width:100%;
+  height:700px;
+  z-index: -1;
+  top:0;
+  left:0;
+}
+
+.blurImg > div {
+  position:fixed;
+  width:100%;
+  height:700px;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center center;
+}
+
+.blur {
+  opacity:0;
+}
+
+.jumbotron {
+  z-index:1;
+  position: absolute;
+  top:0;
+  width:100%;
+  padding: 0px 20px;
+  background: none;
+}
+
+.jumbotron > div {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 30px;
+  height: 650px;
+  text-align: center;
+  color:White;
+}
+
+/***** Responsiveness *****/
+
+@media screen and (max-width: 500px){
+  body {
+    font-size: 12px;
+  }
+  .blurImg, .blurImg > div {
+    height: 600px;
+  }
+  .jumbotron > div {
+    width: auto;
+    padding-top: 30px;
+    height: 600px;
+  }
+}
+
+/***** About *****/
 
 .about {
+  z-index:1;
+  padding: 30px 0 30px 0;
+  text-align: center;
   background: #e0372f;
-  margin-bottom: 0;
   color: rgba(255, 245, 245, 0.9);
 }
 
-.about p {
-  text-align: center;
+.half-rule {
+  margin: 40px auto;
+  display: block; height: 1px;
+  border: 0; border-top: 1px solid rgba(255, 245, 245, 0.3);
+  margin: 1em 0; padding: 0;
 }
+
+.progress {
+    height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: rgba(255, 245, 245, 0.6);
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+.progress-bar {
+  box-shadow: none;
+}
+
+.progress-bar-skill {
+    background-color: #ca312a;
+}
+
+/***** Testimonials *****/
+
+.testimonials {
+  background: white;
+  padding: 70px 0px 100px;
+}
+
+.carousel-indicators {
+  bottom: -40px;
+}
+
+.carousel-indicators li {
+  background: #333;
+}
+
+.carousel-indicators .active {
+  background: #e0372f;
+}
+
+.carousel-caption {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    font-style: italic;
+    text-align: center;
+    color: #333;
+    text-shadow: none;
+    margin: 0px auto;    
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/***** Footer *****/
+
+.footer {
+  background: white;
+}
+
