@@ -1,7 +1,7 @@
 /***** Fonts *****/
 
 body {
-   font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
+  font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
   line-height: 1.42857;
   color: #333;
   background-color: #FFF;
@@ -48,6 +48,10 @@ p {
 
 .jumbotron h1 {
   text-shadow: 0.04em 0.04em 0 rgba(0, 0, 0, 0.3);
+}
+
+.glyphicon {
+  font-size: 1.5em;
 }
 
 /***** Buttons *****/
@@ -172,6 +176,10 @@ p {
   color: rgba(255, 245, 245, 0.9);
 }
 
+.align_left {
+  text-align: justify;
+}
+
 .half-rule {
   margin: 40px auto;
   display: block; height: 1px;
@@ -230,6 +238,68 @@ p {
     z-index: 10;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+/***** What I Do *****/
+
+.whatido {
+  z-index:1;
+  padding: 30px 0 30px 0;
+  text-align: left;
+  background: #e0372f;
+  color: rgba(255, 245, 245, 0.9);
+}
+
+.whatido .glyphicon {
+  margin: 20px;
+}
+
+/***** Work *****/
+
+.work {
+  z-index:1;
+  padding: 30px 0 30px 0;
+  text-align: left;
+  background: #fff;
+  color: #e0372f;
+}
+
+.work-item {
+  margin-top: 30px;
+}
+
+.work img {
+  margin: 0 20px 0 20px auto;
+}
+
+.work-item .work-caption {
+    margin: 0px auto;
+    padding: 15px;
+    max-width: 400px;
+    text-align: center;
+    background-color: #e0372f;
+}
+
+.work-item .work-caption h4 {
+  margin: 0px;
+  text-transform: none;
+  color: #FFF;
+  font-weight: 600;
+}
+
+.work-item .work-caption p {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+
+/***** Contact *****/
+
+.contact {
+  z-index:1;
+  padding: 30px 0 30px 0;
+  text-align: center;
+  background: #e0372f;
+  color: rgba(255, 245, 245, 0.9);
 }
 
 /***** Footer *****/
