@@ -1,0 +1,91 @@
+.ti_feed {
+	max-width: 1140px;
+}
+
+.ti-feed-post {
+	text-align: left;
+	font-family: sans-serif;
+	font-weight: 100;
+	margin: 10px;
+	width: 360px;
+	height: 360px;
+	background-repeat: no-repeat;
+	background-size: cover;
+    position: relative;
+    display:inline-block;
+}
+
+.ti-feed-post-twitter {
+	background-color: rgba(0,0,0,0.7);
+	text-align: center;
+}
+
+.ti-feed-post:before {
+ 	content: '';
+ 	display: inline-block;
+ 	height: 100%; 
+ 	vertical-align: middle;
+ 	margin-right: -0.25em;
+ }
+
+.ti-feed-post > div {
+
+}
+
+.ti-feed-post > a {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.ti-feed-post-instagram > .ti-feed-info {
+	position: absolute;
+	background-color: rgba(0,0,0,0.7);
+	width: 100%;
+	height: 100px;
+	bottom: 0;
+}
+
+.ti-feed-post-twitter > .ti-feed-info {
+	background-color: rgba(0,0,0,0.0);
+    display: inline-block;
+    padding: 20px;
+    vertical-align: middle;
+}
+
+.ti-feed-info > p {
+	color: rgb(255, 255, 255);
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.ti-feed-post-twitter p {
+	text-align: center;
+}
+
+.ti-feed-info a {
+	color: rgb(255, 255, 255);
+}
+
+.ti-feed-info a:link {
+	text-decoration: none;
+}
+.ti-feed-info a:visited {
+	text-decoration: none;
+}
+.ti-feed-info a:hover {
+	text-decoration: underline;
+}
+.ti-feed-info a:active {
+	text-decoration: underline;
+}
+
+.ti-feed-info > p:first-child {
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.ti-feed-info > p:last-child {
+	font-size: 14px;
+}
