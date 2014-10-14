@@ -10,7 +10,6 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -40,24 +39,17 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">J</a>
+                <a class="navbar-brand scroll-top" href="#">J</a>
               </div>
 
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#">Link</a></li>
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">Separated link</a></li>
-                    </ul>
-                  </li>
+                  <li><a href="#" class="scroll-link" data-id="about">About</a></li>
+                  <li><a href="#" class="scroll-link" data-id="whatido">What I Do</a></li>
+                  <li><a href="#" class="scroll-link" data-id="work">Work</a></li>
+                  <li><a href="#" class="scroll-link" data-id="contact">Contact</a></li>
                 </ul>
               </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -89,7 +81,7 @@
     </div>
     <!-- /Jumbotron -->
     <!-- About -->
-    <div class="about">
+    <div id="about" class="about">
       <div class="container">
         <div class="row">
         <div class="col-xs-12 col-lg-12">
@@ -132,7 +124,7 @@
               </div>
             </div>
           
-            <button type="button" class="btn btn-transparent btn-lg">View my work</button>
+            <button data-id="work" type="button" class="btn btn-transparent btn-lg scroll-link">View my work</button>
           </div>
         </div>
         </div>
@@ -169,7 +161,7 @@
     </div>
     <!-- /Testimonials -->
     <!-- What I Do -->
-    <div class="whatido">
+    <div id="whatido" class="whatido">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-md-12">
@@ -183,7 +175,7 @@
             </div>
             <div class="col-xs-10">
               <h3>UI/UX Design</h3>
-              <p>I design intuitive user interfaces and experiences for websites and applications.</p>
+              <p>I create intuitive experiences between the user & interface. I design interfaces for websites & applications.</p>
             </div>
           </div>
           <div class="col-xs-12 col-md-6">
@@ -192,7 +184,7 @@
             </div>
             <div class="col-xs-10">
               <h3>Web Design</h3>
-              <p>I design & code mobile friendly websites with stunning visuals.</p>
+              <p>I design & code responsive websites with stunning visuals. I like to make mobile first web design.</p>
             </div>
           </div>
         </div>
@@ -212,7 +204,7 @@
             </div>
             <div class="col-xs-10">
               <h3>Video Production</h3>
-              <p>I produce great videos. I shoot, edit, animate & write scripts.</p>
+              <p>I love to produce visually interesting videos. I shoot, edit, animate & write scripts.</p>
             </div>
           </div>
         </div>
@@ -223,7 +215,7 @@
             </div>
             <div class="col-xs-10">
               <h3>Photography</h3>
-              <p>Logo-, print- & digital products. I like to make pixel precise graphics.</p>
+              <p>My goal is to capture the best moments whether it's an event or a spontaneous situation.</p>
             </div>
           </div>
           <div class="col-xs-12 col-md-6">
@@ -232,7 +224,8 @@
             </div>
             <div class="col-xs-10">
               <h3>Digital marketing</h3>
-              <p>I shoot & edit videos. I do video production, animation & audio mixing.</p>
+              <p>I always approach digital & social media marketing with a twist.
+              My goal is to come up with a mind-blowing concept.</p>
             </div>
           </div>
         </div>
@@ -240,7 +233,7 @@
     </div>
     <!-- /What I Do -->
     <!-- Work -->
-    <div class="work">
+    <div id="work" class="work">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-md-12">
@@ -249,47 +242,47 @@
         </div>
         <div class="row">
           <div class="col-md-4 work-item">
-            <a href=".bs-example-modal-lg" data-toggle="modal"><img class="img-responsive" src="images/work/1.jpg"></a>
+            <a href=".bs-example-modal-lg" data-toggle="modal" data-target="#soar-modal"><img class="img-responsive" src="images/work/soar.jpg"></a>
             <div class="work-caption">
-              <h4>Golden</h4>
-              <p>Website Design</p>
+              <h4>SOAR iOS Application</h4>
+              <p>UI/UX Design</p>
             </div>
           </div>
           <div class="col-md-4 work-item">
-            <a href=".bs-example-modal-lg" data-toggle="modal"><img class="img-responsive" src="images/work/1.jpg"></a>
+            <a href=".bs-example-modal-lg" data-toggle="modal" data-target="#ios-modal"><img class="img-responsive" src="images/work/ios.jpg"></a>
             <div class="work-caption">
-              <h4>Golden</h4>
-              <p>Website Design</p>
+              <h4>iOS icons</h4>
+              <p>UI/UX Design</p>
             </div>
           </div>
           <div class="col-md-4 work-item">
-            <a href=".bs-example-modal-lg" data-toggle="modal"><img class="img-responsive" src="images/work/1.jpg"></a>
+            <a href=".bs-example-modal-lg" data-toggle="modal" data-target="#hannasky-modal"><img class="img-responsive" src="images/work/hannasky.jpg"></a>
             <div class="work-caption">
-              <h4>Golden</h4>
-              <p>Website Design</p>
+              <h4>HannaSky.com</h4>
+              <p>Web Design</p>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4 work-item">
-            <a href=".bs-example-modal-lg" data-toggle="modal"><img class="img-responsive" src="images/work/1.jpg"></a>
+            <a href=".bs-example-modal-lg" data-toggle="modal" data-target="#lukiolaisopas-modal"><img class="img-responsive" src="images/work/lukiolaisopas.jpg"></a>
             <div class="work-caption">
-              <h4>Golden</h4>
-              <p>Website Design</p>
+              <h4>Lukiolaisopas.fi</h4>
+              <p>Web Design</p>
             </div>
           </div>
           <div class="col-md-4 work-item">
-            <a href=".bs-example-modal-lg" data-toggle="modal"><img class="img-responsive" src="images/work/1.jpg"></a>
+            <a href=".bs-example-modal-lg" data-toggle="modal" data-target="#hannaskyvideo-modal"><img class="img-responsive" src="images/work/hannaskyvideo.jpg"></a>
             <div class="work-caption">
-              <h4>Golden</h4>
-              <p>Website Design</p>
+              <h4>Hanna Sky -video</h4>
+              <p>Video Production</p>
             </div>
           </div>
           <div class="col-md-4 work-item">
-            <a href=".bs-example-modal-lg" data-toggle="modal"><img class="img-responsive" src="images/work/1.jpg"></a>
+            <a href=".bs-example-modal-lg" data-toggle="modal" data-target="#taipale-modal"><img class="img-responsive" src="images/work/taipale.jpg"></a>
             <div class="work-caption">
-              <h4>Golden</h4>
-              <p>Website Design</p>
+              <h4>Taipaletelematics.com</h4>
+              <p>Web Design</p>
             </div>
           </div>
         </div>
@@ -297,7 +290,7 @@
     </div>
     <!-- /Work -->
     <!-- Contact -->
-    <div class="contact">
+    <div id="contact" class="contact">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-md-12">
@@ -306,50 +299,146 @@
             <p class="bigger_text">Please feel free to drop a message to me <a title="Feel free to shoot me an email" href="mailto:juuso@juuso.co" class="bold_a">juuso@juuso.co</a>. I reply at the speed of light!
 You can also call me anytime <span class="bold_a">+358 50 32656921</span></p>
 
+            
+            
+            <!--
+            
             <hr class="half-rule"></hr>
             
             <h2 class="section_title">Social</h2>
 
             <ul class="list-inline social-buttons">
-                            <li><a href="http://twitter.com/juusoco" target="_blank"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="http://www.linkedin.com/in/juusosaastamoinen" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            </li>
+                            <li><a href="http://twitter.com/juusoco" target="_blank"><span class="typcn typcn-social-twitter"><span></a></li>
+                            <li><a href="http://www.linkedin.com/in/juusosaastamoinen" target="_blank"><span class="typcn typcn-social-linkedin"><span></a></li>
             </ul>
+          -->
 
           </div>
         </div>
       </div>
     </div>
     <!-- /Contact-->
-    <!-- Footer -->
+    <!-- Footer 
     <div class="footer">
-      <div class="container">
-          <p><span class="glyphicon glyphicon-heart"></span>FOOTER</p>
-      </div>
+          <div id="map_block"><iframe scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Tampere,+Suomi&amp;aq=0&amp;oq=tampere&amp;sll=37.0625,-95.677068&amp;sspn=78.09101,121.376953&amp;ie=UTF8&amp;hq=&amp;hnear=Tampere,+Finland&amp;t=m&amp;z=14&amp;iwloc=A&amp;output=embed" frameborder="0" width="100%"></iframe></div>
     </div>
     <!-- /Footer -->
     <!-- Modals-->
-      <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+
+      <!-- SOAR -->
+      <div id="soar-modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="mySmallModalLabel">Small modal</h4>
+               <h2 class="section_title">SOAR iOS Application</h2>
               </div>
               <div class="modal-body">
-                  ...
+                  <img class="img-responsive" src="images/work/full/soar.jpg">
+                  <a href="https://itunes.apple.com/us/app/soar-conquers-fear-of-flying/id679631730?mt=8" target="_blank"><button type="button" class="btn btn-red btn-lg">View app</button></a>
               </div>
       
             </div>
           </div>
       </div>
+
+      <!-- iOS -->
+      <div id="ios-modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+               <h2 class="section_title">iOS icons</h2>
+              </div>
+              <div class="modal-body">
+                  <img class="img-responsive" src="images/work/full/ios.jpg">
+                  <a href="https://www.behance.net/gallery/11634413/Rounded-icons-iOS-7-redesigned-icons" target="_blank"><button type="button" class="btn btn-red btn-lg">View more</button></a>
+              </div>
+      
+            </div>
+          </div>
+      </div>
+
+      <!-- Hanna Sky -->
+      <div id="hannasky-modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+               <h2 class="section_title">Hanna Sky</h2>
+              </div>
+              <div class="modal-body">
+                  <img class="img-responsive" src="images/work/full/hannasky.jpg">
+                  <a href="http://hannasky.com" target="_blank"><button type="button" class="btn btn-red btn-lg">View website</button></a>
+              </div>
+      
+            </div>
+          </div>
+      </div>
+
+      <!-- Lukiolaisopas -->
+      <div id="lukiolaisopas-modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+               <h2 class="section_title">Lukiolaisopas</h2>
+              </div>
+              <div class="modal-body">
+                  <img class="img-responsive" src="images/work/full/lukiolaisopas.jpg">
+                  <a href="http://lukiolaisopas.fi" target="_blank"><button type="button" class="btn btn-red btn-lg">View website</button></a>
+              </div>
+      
+            </div>
+          </div>
+      </div>
+
+      <!-- Hanna Sky Video -->
+      <div id="hannaskyvideo-modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                 <h2 class="section_title">Hanna Sky - Next To Me (Video)</h2>
+              </div>
+              <div class="modal-body">
+                  <div class="responsive-video">
+                  <iframe width="560" height="315" src="//www.youtube.com/embed/PFGgDDqZCxk" frameborder="0" allowfullscreen></iframe>
+                  </div>
+              </div>
+      
+            </div>
+          </div>
+      </div>
+
+      <!-- Taipale -->
+      <div id="taipale-modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                 <h2 class="section_title">Taipale Telematics</h2>
+              </div>
+              <div class="modal-body">
+                  <img class="img-responsive" src="images/work/full/taipale.jpg">
+                  <a href="http://taipaletelematics.com" target="_blank"><button type="button" class="btn btn-red btn-lg">View website</button></a>
+              </div>
+      
+            </div>
+          </div>
+      </div>
+
     <!-- /Modals-->
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
