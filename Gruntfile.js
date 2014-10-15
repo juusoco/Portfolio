@@ -293,7 +293,20 @@ module.exports = function (grunt) {
         }, {
           src: 'node_modules/apache-server-configs/dist/.htaccess',
           dest: '<%= config.dist %>/.htaccess'
-        }, {
+        },
+        {
+          expand: true,
+          dot: true,
+          cwd: 'bower_components/typicons/src/font',
+          src: [
+            '*.eot',
+            '*.woff',
+            '*.svg',
+            '*.ttf'
+          ],
+          dest: '<%= config.dist %>/styles'
+        },
+         {
           expand: true,
           dot: true,
           cwd: 'bower_components/bootstrap/dist',
