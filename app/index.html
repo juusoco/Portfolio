@@ -5,6 +5,8 @@
     <title>User Interface, Graphic & Web Designer from Finland | Juuso Saastamoinen</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+    <meta name="theme-color" content="#E0372F">
+    <link rel="icon" sizes="192x192" href="icon.png">
     <link rel="shortcut icon" href="/favicon.ico">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
@@ -19,6 +21,7 @@
     <link rel="stylesheet" href="styles/front.css">
     <!-- endbuild -->
     <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <!-- /Fonts -->
@@ -29,7 +32,7 @@
     <![endif]-->
 
     <!-- Navigation -->
-    <header class="navbar-default navbar-fixed-top" role="banner">
+    <header id="menu" class="navbar-default navbar-fixed-top" role="banner">
         <div class="container">
           <nav role="navigation">
             <div class="container-fluid">
@@ -63,7 +66,7 @@
     <div class="blurImg">
       <div style="background-image: url('images/bg_header_blurred.jpg')">
       </div>
-      <div class="blur" style="background-image: url('images/bg_header_blurred_more.jpg')">
+      <div class="blur" style="background-image: url('images/bg_header_blurred_more_new.jpg')">
       </div>
     </div>
     <!-- /Blur Images -->
@@ -451,6 +454,26 @@ You can also call me anytime <span class="bold_a">+358 50 32656921</span></p>
       e.src='//www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-35321915-1');ga('send','pageview');
+    </script>
+
+ 
+
+    <script type="text/javascript">
+ 
+      (function($) {
+          $(document).ready(function(){
+       
+              $(window).scroll(function(){
+                  if ($(this).scrollTop() > 100) {
+                      $('#menu').fadeIn(500);
+                  } else {
+                      $('#menu').fadeOut(500);
+                  }
+              });
+       
+          });
+      })(jQuery);
+     
     </script>
 
         <!-- build:js(.) scripts/plugins.js -->

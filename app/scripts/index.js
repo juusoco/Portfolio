@@ -1,4 +1,4 @@
 $(window).scroll(function() {
-	oVal = ($(window).scrollTop() / 240);
+	oVal = ($(window).scrollTop() / 360);
 	$('.blur').css('opacity', oVal);
 });

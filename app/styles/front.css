@@ -21,6 +21,43 @@ body {
   margin-left: auto;
 }
 
+#menu {
+  display: none;
+}
+
+.navbar-fixed-top {
+  border-color: none;
+  background: #E0372F;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: rgba(255, 245, 245, 0.9);
+}
+
+.navbar-default .navbar-brand {
+  font-family: 'Pacifico', cursive;
+  letter-spacing: -1px;
+  font-weight: 700;
+  color: rgba(255, 245, 245, 0.9);
+}
+
+.navbar-default .navbar-toggle {
+  border: none;
+}
+
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: rgba(255, 245, 245, 0.9)!important;
+}
+
+.navbar-default .navbar-collapse {
+  border: none;
+  box-shadow: none;
+}
+
 h2 {
   font-size: 1em;
   font-weight: 700;
@@ -33,14 +70,23 @@ h2.section_title {
   margin: 0 0 2em 0;
 }
 
+h3, h4 {
+  font-family: "Nunito",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+}
+
 p {
   font-size: 1.1em;
+  line-height: 1.5em;
   letter-spacing: 0.025em;
+  font-family: "Nunito",Helvetica,Arial,sans-serif;
+  font-weight: 300;
 }
 
 .bigger_text {
   font-size: 1.3em;
   letter-spacing: 0.075em;
+  padding-top: 0.8em;
 }
 
 
@@ -71,12 +117,6 @@ a:hover {
 
 .glyphicon {
   font-size: 1.5em;
-}
-
-.navbar-default .navbar-brand {
-  font-family: 'Pacifico', cursive;
-  letter-spacing: -1px;
-  font-weight: 700;
 }
 
 /***** Buttons *****/
@@ -203,7 +243,7 @@ ul.social-buttons li a:hover {
 .jumbotron > div {
   max-width: 600px;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 15px;
   height: 650px;
   text-align: center;
   color:White;
@@ -213,23 +253,41 @@ ul.social-buttons li a:hover {
 
 @media screen and (max-width: 500px){
   body {
-    font-size: 12px;
+
   }
+  .img-profile {
+    margin: 60px auto 40px;
+    width: 200px;
+  }
+  .jumbotron p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    text-shadow: 0.03em 0.03em 0px rgba(0, 0, 0, 0.3);
+}
   .blurImg, .blurImg > div {
-    height: 600px;
+    height: 550px;
   }
   .jumbotron > div {
     width: auto;
     padding-top: 30px;
-    height: 600px;
+    height: 550px;
   }
+  .carousel {
+    position: relative;
+    min-height: 260px!important;
+}
+.bigger_text {
+  font-size: 1.1em;
+
+}
+
 }
 
 /***** About *****/
 
 .about {
   z-index:1;
-  padding: 30px 0 30px 0;
+  padding: 4em 0px;
   text-align: center;
   background: #e0372f;
   color: rgba(255, 245, 245, 0.9);
@@ -242,15 +300,16 @@ ul.social-buttons li a:hover {
 .half-rule {
   margin: 40px auto;
   display: block; height: 1px;
-  border: 0; border-top: 1px solid rgba(255, 245, 245, 0.3);
-  margin: 1em 0; padding: 0;
+  border: 0; border-top: 1px solid rgba(255, 245, 245, 0.2);
+  margin: 3em 0;
+  padding: 0;
 }
 
 .progress {
     height: 20px;
     margin-bottom: 20px;
     overflow: hidden;
-    background-color: rgba(255, 245, 245, 0.6);
+    background-color: rgba(255, 245, 245, 0.3);
     border-radius: 4px;
     box-shadow: none;
 }
@@ -260,7 +319,7 @@ ul.social-buttons li a:hover {
 }
 
 .progress-bar-skill {
-    background-color: #ca312a;
+    background-color: rgba(255, 245, 245, 0.5);
 }
 
 /***** Testimonials *****/
@@ -268,6 +327,15 @@ ul.social-buttons li a:hover {
 .testimonials {
   background: white;
   padding: 70px 0px 100px;
+}
+
+.carousel {
+    position: relative;
+    min-height: 160px;
+}
+
+.carousel h3 {
+  font-size: 23px;
 }
 
 .carousel-indicators {
@@ -303,7 +371,7 @@ ul.social-buttons li a:hover {
 
 .whatido {
   z-index:1;
-  padding: 30px 0 30px 0;
+  padding: 4em 0px;
   text-align: left;
   background: #e0372f;
   color: rgba(255, 245, 245, 0.9);
@@ -317,7 +385,7 @@ ul.social-buttons li a:hover {
 
 .work {
   z-index:1;
-  padding: 30px 0 30px 0;
+  padding: 4em 0px;
   text-align: left;
   background: #fff;
   color: #e0372f;
@@ -343,12 +411,12 @@ ul.social-buttons li a:hover {
   margin: 0px;
   text-transform: none;
   color: #FFF;
-  font-weight: 600;
 }
 
 .work-item .work-caption p {
   color: rgba(255, 255, 255, 0.5);
   margin: 0;
+  font-size: 0.9em;
 }
 
 .responsive-video { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
@@ -374,7 +442,7 @@ ul.social-buttons li a:hover {
 
 .contact {
   z-index:1;
-  padding: 30px 0 30px 0;
+  padding: 4em 0px;
   text-align: center;
   background: #e0372f;
   color: rgba(255, 245, 245, 0.9);

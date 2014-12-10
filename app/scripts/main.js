@@ -19,6 +19,12 @@ $(document).ready(function() {
       $('#main-nav').toggleClass("open");
       });
       });
+      // hide mobile menu after click
+      $('.navbar-collapse a').click(function (e) {
+      if($('.navbar-toggle').css('display') == 'block' && !$(this).siblings().length){
+        $('.navbar-collapse').collapse('toggle');
+      }
+      });
       // scroll function
       function scrollToID(id, speed){
       var offSet = 50;
